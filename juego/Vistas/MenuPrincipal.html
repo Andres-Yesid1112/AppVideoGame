@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/Estilos/MenuPrincipal.css">
+</head>
+<body>
+    <div id="Menu" class="menuDesplegable">
+		<h1><i class="fa fa-user"></i> Usuario</h1>
+		<p onclick="direcInicio()">Inicio</p>
+		<p onclick="redirecional();">Nosotros</p>
+		<p onclick="otraRedirec()">Regla de Juego</p>
+        <div class="linea"></div>
+        <p>Configuración</p>
+        <p>Cerrar sesión</p>
+	</div>
+
+	<div id="Sombra" class="sombra"></div>
+    <header>
+        <nav>
+            <li><i id="Boton" class="fa fa-th-large"></i></li>
+            <li style="font-weight: 600; padding: 10px 20px;" onclick="direcInicio()">Bienvenidos</li>
+            <li onclick="redirecional();">Nosotros</li>
+            <li onclick="otraRedirec()">Reglas de Juego</li>
+            <div class="secDerecha">
+                <li><i class="fa fa-user"></i> Perfil</li>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="h1" id="num"></h2>
+    <div class="div" id="content">
+    </div>
+    <button id="See" class="uno">Observar todas</button>
+    <button id="NotSee" class="dos">Tapar todas</button>
+    
+    <script src="../assets/js/MenuPrincipal.js"></script>
+    <!--Scripts de las librerias que se van a utilizar-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

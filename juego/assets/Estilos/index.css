@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}    
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background:#e2e2e2;
+}
+
+/* Estilos del Formulario */
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset.active{
+    display: block;
+    text-transform: uppercase;
+    background: white;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+fieldset.inactive{
+    display: none;
+}
+
+fieldset legend{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+fieldset form{
+    font-size: 0.85em;
+}
+
+form .form-group{
+    margin: 10px;
+}
+
+
+form p.error{
+    display: none;
+}
+
+form p.error-active{
+    display: block;
+    text-transform: capitalize;
+    font-size: 0.75em;
+    margin: 10px auto;
+    width: 80%;
+}
+
+form div.error{
+    display: none;
+}
+
+.mensaje-Exitoso{
+    display: none;
+}
+
+.mensaje-Exitoso_Activo{
+    display: block;
+}
+
+form div.mensaje-Error_Activo{
+    display: block;
+    background-color: #d32f2f;
+    width: 75%;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.form-group label{
+    margin-left: 25px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email]{
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 30px;
+    margin-bottom: 0;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus {
+    background-color: #fff;
+    border-bottom: 3px solid #5fbae9;
+}
+
+  input[type=text]:placeholder, input[type=password]::placeholder, input[type=number]::placeholder, input[type=email]::placeholder {
+    color: #cccccc;
+  }
+  
+button{
+    align-items: center;
+    flex-direction: column;
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 0px 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #39ace7;
+}
+  
+button:active {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+form div.footer-form{
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+/*Validaciones*/
+.form-group_Incorrecto label{
+    color: #bb2929;
+    margin-left: 25px;
+}
+
+.form-group_Incorrecto input{
+    border: 3px solid #bb2929;
+}
+
+.form-group_Incorrecto p{
+    color: #bb2929;
+}
+
+.form-group_Incorrecto input:focus{
+    border: 3px solid #bb2929;
+}
+
+.form-group label{
+    color: #0d0d0d;
+}

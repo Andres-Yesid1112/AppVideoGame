@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Inicio</title>
+    <meta name="description" 
+    content="Para esta pagina se va a agreagar los formularios">
+    <link rel="stylesheet" href="assets/Estilos/index.css">
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <fieldset class="inactive" id="fieldLogin">
+            <legend>Login</legend>
+            <form action="Vistas/MenuPrincipal.html" method="POST">
+                <div class="form-group">
+                    <label for="nombreUsuario">Usuario:</label>
+                    <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Andrea123">
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="clave" name="clave" placeholder="*******">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="login">Iniciar Sesion</button>
+                </div>
+                <div class="footer-form">
+                    <a href="">¿Olvidaste Contraseña?</a>&nbsp; &nbsp;
+                    <a href="" id="cambiarRegistro">¿No te has registrado?</a>
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset class="active" id="fieldRegistro">
+            <legend>Formulario de Registro</legend>
+            <form action=""  id="formRegistro" method="POST">
+                <div class="form-group" id="grupo-nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Andrea" required>
+                    <p class="error">El nombre debe tener al menos 5 dígitos de tipo texto</p>
+                </div>
+                <div class="form-group" id="grupo-usuario">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Andrea123" required>
+                    <p class="error">El nombre de usuario debe tener letras, numero, guion bajo y una longitud mínima de 5 dígitos</p>
+                </div>
+                <div class="form-group" id="grupo-contrasena">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="******" required>
+                    <p class="error">El contraseña debe tener una longitud mínima de 5 dígitos</p>
+                </div>
+                <div class="error" id="mensaje-Error">
+                    <p><strong>Error: </strong>el formulario no se ha llenado correctamente</p>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="registrar">Registrar</button>
+                    <p class="mensaje-Exitoso" id="mensaje-Exitoso">Genial Ahora puedes iniciar Sesion</p>
+                </div>
+                <div class="footer-form">
+                    <p onclick="cambiarLogin()">¿Ya tienes cuenta? </p> 
+                </div>
+            </form>
+        </fieldset>
+    </main>
+
+    <footer></footer>
+
+    <script src="assets/js/index.js"></script>
+    <!--Scripts de las librerias que se van a utilizar-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+</body>
+</html>
